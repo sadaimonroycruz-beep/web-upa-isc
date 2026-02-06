@@ -1,112 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-    <meta name="description" content="Programaci&oacute;n Web- UPA I S C "/>
-    <title>Desarrollo Web ZURI SADAY MONROY CRUZ ISC </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> 
-    
-    <link rel="stylesheet" href="css/main.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Programación Web - UPA ISC">
+  <title>Desarrollo Web | Zuri Monroy</title>
 
-  <body>
-    <h1>ZURI SADAY MONROY CRUZ</h1>
-    <h2>UNIVERSIDAD POLITECNICA DE ATLACOMULCO</h2>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <header class="header">
-      <nav class="nav container">
-        <a href="#" class="logo">UPA</a>
-        <button class="nav-toggle" aria-label="Abrir men&uacute;">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <ul class="nav-menu">
-          <li><a href="#inicio">Inicio </a></li>
-          <li><a href="#serivios">Servicios</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#portafolio.html">Portafolio</a></li>
-          <li><a href="#blog.html">Blog</a></li>
-          <li>
-               <a href="#contacto" class="btn btn -contacto">Contacto</a>
-              </li>
-         </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="inicio" class="hero">
-      <div class="container" hero-content">
-        <h1>Soluciones digitales modernas</h1>
-        <p>
-          Diseñamos y desarrollamos experiencias web profesionales y escalables.
-        </p>
-        <a href="#servicios" class="btn  btn-primary">Ver servicios </a>
-        </div>
-        </section>
-         <section id="servicios" class="section">
-          <div class="container">
-            <header class="section-header">
-              <h2>Nuestro Servicio</h2>
-              <p>Soluciones pensadas para crecer contigo</p>
-            </header>
-            <div class="grid">
-              <article class="card">
-                <h3>Diseño Web</h3>
-                <p>Interfaces modernas accesibles</p>
-              </article>
-              <article class="card">
-                <h3>Desarrollo</h3>
-                <p>Aplicaciones rapidas, seguras y escalables</p>
-              </article>
-              <article class="card">
-                <h3>SEO & Perfomance</h3>
-                <p>Optimizaci&oacute;n para buscadores y alto rendimiento.</p>
-              </article>
-            </div>
-          </div>
-         </section>
-         <section id="nosotros"class="section section-alt"
-         <div class="container">
-            <div class="two-colums">
-              <div>
-                <h2>Sobre Nosotros</h2>
-                <p>
-                  Somos un equipo en crear productos digitales de alta calidad,
-                  usando tecnolog&iacute;as modernas y buenas pr&aacute;cticas.
-                 </p>
-              </div>
-            </div>
-                 <img src="assets/" alt="">
-         </div>
-      </section id="contacto " class="section">
-      <div class="container">
-        <header class="section-header">
-          <h2>Contacto</h2>
-          <p>Hablemos de tu pr&oacute;ximo proyecto</p>
-        </header>
-        <form class="form">
-          <input type="text" placeholder="Nombre" required />
-          <input type="text" placeholder="Nombre" required />
-          <textarea placeholder="Mensaje" rows="5" required></textarea>
-          <button type="submit" class="btn-primary">Enviar Informaci&oacute;n</button>
-        </form>
-      </div>
-    </section>
-      </main>
-      <footer class="footer">
-        <div class="container footer-content">
-          <p>
-            &copy; 2026 UNIVERSIDAD POLIT&Eacute;CNICA DE ATLACOMULCO ZURI SADAY MONROY CRUZ.
-            Todos los derechos reservados 
-          </p>
-        </div>
+  <link rel="stylesheet" href="css/main.css">
+</head>
 
-      </footer>
-      <button class="scroll-top" aria-label="Volver arriba">
-        &uarr;
-      </button>
-  </body>
+<body>
+
+<header class="header">
+  <nav class="nav container">
+    <a href="index.html" class="logo">UPA</a>
+    <ul class="nav-menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="elementos.html">Elementos</a></li>
+      <li><a href="tablas.html">Tablas</a></li>
+      <li><a href="#contacto" class="btn btn-primary">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section id="inicio" class="hero">
+  <div class="container hero-content">
+    <h1>Soluciones digitales modernas</h1>
+    <p>Diseñamos y desarrollamos experiencias web profesionales.</p>
+    <a href="#servicios" class="btn btn-primary">Ver servicios</a>
+  </div>
+</section>
+
+<section id="servicios" class="section">
+  <div class="container">
+    <h2>Nuestros Servicios</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Diseño Web</h3>
+        <p>Interfaces modernas y accesibles.</p>
+      </article>
+      <article class="card">
+        <h3>Desarrollo</h3>
+        <p>Aplicaciones rápidas y seguras.</p>
+      </article>
+      <article class="card">
+        <h3>SEO</h3>
+        <p>Optimización para buscadores.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="nosotros" class="section">
+  <div class="container">
+    <h2>Sobre Nosotros</h2>
+    <p>Equipo enfocado en soluciones digitales modernas.</p>
+  </div>
+</section>
+
+<section id="contacto" class="section">
+  <div class="container">
+    <h2>Contacto</h2>
+    <form class="form">
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo" required>
+      <textarea placeholder="Mensaje" rows="4"></textarea>
+      <button class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-content">
+    <p>&copy; 2026 Universidad Politécnica de Atlacomulco | Zuri Monroy</p>
+  </div>
+</footer>
+
+</body>
 </html>

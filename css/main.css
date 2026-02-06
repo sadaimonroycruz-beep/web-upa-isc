@@ -1,196 +1,98 @@
-::root{
-    --color-primary: #2563EB;
-    --color-dark: #0F172A;
-    --color-light:#F8FAFC;
-    --color-gray:#64748B;
-
-    --max-width:1200px;
-    --radius: 0.75rem;
-
-
+:root{
+  --color-primary:#2563EB;
+  --color-dark:#0F172A;
+  --color-light:#F8FAFC;
+  --color-gray:#64748B;
+  --max-width:1200px;
+  --radius:12px;
 }
+
+*,
 *::before,
-*::after,
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    margin: 0px;
+*::after{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
 body{
-    font-family:'Inter', sans-serif;
-    color: var(--color-dark);
-    line-height:1.6;
-    background-color: #FFF;
-
-
-}
-
-img{
-    max-width: var(--max-width);
-    display: block;
-    border-radius: var(--radius);
+  font-family:'Inter', sans-serif;
+  color:var(--color-dark);
+  line-height:1.6;
 }
 
 .container{
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 1.25rem;
-}
-
-.section{
-    padding: 4rem 0;
-}
-
-.section{
-    background-color: var(--color-light);
-
-}
-
-.section{
-    text-align: center;
-    margin-botton: 3rem;
-
-}
-
-.btn{
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    border-radius: var(--radius);
-    text-decoration: none;
-    font-weight: 600;
-    transition: background 0.3s;
-
-}
-
-.btn-primary{
-    background-color: var(--color-primary);
-    color: #FFF;
-
-}
-
-.btn-primary:hover{
-    background-color: #1D4ED8;
-
+  max-width:var(--max-width);
+  margin:auto;
+  padding:1rem;
 }
 
 .header{
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: rgba(255,255,255,0.85);
-    backdrop-filter: blu(10px);
-    border-bottom: 1px solid #FFF;
-
+  background:#fff;
+  border-bottom:1px solid #e5e7eb;
 }
 
 .nav{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    height: 4.5rem;
-}
-
-.logo{
-    font-size: 1.4rem;
-    font-weight: 700;
-    color:var(--color-dark);
-    letter-spacing: -0.5px;
-
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
 .nav-menu{
-    display: flex;
-    text-decoration: none;
-    gap: 2rem;
-    list-style: none;
+  display:flex;
+  list-style:none;
+  gap:1.5rem;
 }
 
 .nav-menu a{
-    position: relative;
-    text-decoration: none;
-    font-weight: 500;
-    color: var(--color-gray);
-    transition: color 0.3s ease;
-
-}
-
-.nav-menu a::after{
-    content:'';
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--color-primary);
-    transition: width 0.3s ease;
-}
-
-.nav-menu a:hover::after{
-    width: 100%;
+  text-decoration:none;
+  color:var(--color-gray);
 }
 
 .hero{
-    background: linear-gradient(135deg, #2563eb,#1e40af);
-    color:#FFF;
-    padding: 6rem 0;
-
+  background:linear-gradient(135deg,#2563eb,#1e40af);
+  color:#fff;
+  padding:4rem 0;
 }
 
-.hero-content{
-    max-width: 700px;
-}
-
-.hero h1{
-    font-size: clamp(2rem, 5vw, 3rem);
-    margin-bottom: 1rem;
-}
-
-.hero p{
-    margin-bottom: 2rem;
+.section{
+  padding:3rem 0;
 }
 
 .grid{
-    display:grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display:grid;
+  gap:1.5rem;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 }
 
 .card{
-    background: #fff;
-    padding: 2rem;
-    border-radius: var(--radius);
-    box-shadow: 0 10px 25px rgb(174, 174, 170);
-
-
+  background:#fff;
+  padding:1.5rem;
+  border-radius:var(--radius);
+  box-shadow:0 10px 25px rgba(0,0,0,.1);
 }
 
-.two-colums{
-    display:grid;
-    gap: 2rem;
+.btn{
+  display:inline-block;
+  padding:.7rem 1.3rem;
+  border-radius:var(--radius);
+  text-decoration:none;
+}
+
+.btn-primary{
+  background:var(--color-primary);
+  color:#fff;
 }
 
 .form{
-    max-width: 500px;
-    margin: 0 auto;
-    display: grid;
-    gap: 1rem;
-}
-
-.form input, .form textarea{
-    padding:0.75rem;
-    border-radius: var(--radius);
-    border: 1px solid #cbd5f5;
-    font-family: inherit;
+  display:grid;
+  gap:1rem;
+  max-width:400px;
 }
 
 .footer{
-    background: var(--color--dark);
-    color: #cbd5e1;
-    padding: 2rem 0;
-}
-
-.footer-content{
-    text-align: center;
-    font-size: 0.875rem;
+  background:var(--color-dark);
+  color:#cbd5e1;
+  padding:1.5rem 0;
+  text-align:center;
 }
