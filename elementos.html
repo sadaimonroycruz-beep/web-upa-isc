@@ -14,7 +14,7 @@
   </nav>
 </header>
 
-<main class="section container">
+<main class="section container center-content">
 
   <h1>Elementos HTML</h1>
 
@@ -32,16 +32,23 @@
     <li>Segundo</li>
   </ol>
 
-  <h2>Enlaces</h2>
+  <h2>Enlace</h2>
   <a href="https://www.google.com" target="_blank">Ir a Google</a>
 
   <h2>Imagen</h2>
-  <img src="assets/imagen.jpg" alt="Imagen de ejemplo">
+  <img
+    src="assets/tecnologia.jpg"
+    alt="Imagen representativa de tecnología y desarrollo web"
+    class="img-tech">
 
   <h2>Objeto embebido</h2>
-  <iframe width="100%" height="315"
+  <iframe
+    width="100%"
+    height="315"
     src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-    allowfullscreen></iframe>
+    title="Video sobre tecnología"
+    allowfullscreen>
+  </iframe>
 
   <h2>Formulario</h2>
   <form class="form">
@@ -49,6 +56,7 @@
     <select>
       <option>ISC</option>
       <option>IRT</option>
+      <option>ITM</option>
     </select>
     <textarea placeholder="Mensaje"></textarea>
     <button class="btn btn-primary">Enviar</button>

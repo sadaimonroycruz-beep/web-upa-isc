@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Programación Web - UPA ISC">
   <title>Desarrollo Web | Zuri Monroy</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +31,7 @@
 <main>
 
 <section id="inicio" class="hero">
-  <div class="container hero-content">
+  <div class="container hero-content center-content">
     <h1>Soluciones digitales modernas</h1>
     <p>Diseñamos y desarrollamos experiencias web profesionales.</p>
     <a href="#servicios" class="btn btn-primary">Ver servicios</a>
@@ -41,7 +40,7 @@
 
 <section id="servicios" class="section">
   <div class="container">
-    <h2>Nuestros Servicios</h2>
+    <h2 class="center-title">Nuestros Servicios</h2>
     <div class="grid">
       <article class="card">
         <h3>Diseño Web</h3>
@@ -60,20 +59,26 @@
 </section>
 
 <section id="nosotros" class="section">
-  <div class="container">
+  <div class="container center-content">
     <h2>Sobre Nosotros</h2>
     <p>Equipo enfocado en soluciones digitales modernas.</p>
+
+    <img
+      src="assets/tecnologia.jpg"
+      alt="Imagen relacionada con tecnología y desarrollo web"
+      class="img-tech">
   </div>
 </section>
 
 <section id="contacto" class="section">
-  <div class="container">
+  <div class="container center-content">
     <h2>Contacto</h2>
+
     <form class="form">
       <input type="text" placeholder="Nombre" required>
       <input type="email" placeholder="Correo" required>
-      <textarea placeholder="Mensaje" rows="4"></textarea>
-      <button class="btn btn-primary">Enviar</button>
+      <textarea placeholder="Mensaje" rows="4" required></textarea>
+      <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
   </div>
 </section>
